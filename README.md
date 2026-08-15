@@ -30,11 +30,11 @@ After compiling the application, run it from the terminal:
 
 ## Project Structure
 
-```text
-student-portal/
-├── .gitignore
-├── README.md
-└── main.cpp
+    student-portal/
+    ├── .gitignore
+    ├── README.md
+    └── main.cpp
+
 
 ## Development Workflow
 
