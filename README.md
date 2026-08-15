@@ -35,3 +35,7 @@ student-portal/
 ├── .gitignore
 ├── README.md
 └── main.cpp
+
+## Development Workflow
+
+The project uses Git for version control. Changes are developed locally, committed with descriptive messages, and pushed to the GitHub repository. Feature development is performed using separate branches and merged into the main branch after completion.
