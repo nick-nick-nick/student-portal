@@ -27,3 +27,11 @@ Compile the application using a C++ compiler:
 After compiling the application, run it from the terminal:
 
     .\student-portal.exe
+
+## Project Structure
+
+```text
+student-portal/
+├── .gitignore
+├── README.md
+└── main.cpp
