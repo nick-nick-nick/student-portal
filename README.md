@@ -20,3 +20,10 @@ Clone the repository and enter the project directory:
 Compile the application using a C++ compiler:
 
     g++ main.cpp -o student-portal
+
+
+## Execution
+
+After compiling the application, run it from the terminal:
+
+    .\student-portal.exe
