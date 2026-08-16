@@ -35,6 +35,7 @@ void displayMenu() {
     cout << "4. Logout" << endl;
 }
 
+
 bool validateUsername(const string& username) {
     return username == "student";
 }
@@ -69,6 +70,15 @@ void displayDashboard(const Student& student) {
     cout << "Pending Tasks: 2" << endl;
 
 }
+void displaySettings() {
+    cout << "\n===== Portal Settings =====" << endl;
+    cout << "Theme: Default" << endl;
+    cout << "Notifications: Enabled" << endl;
+    cout << "Language: English" << endl;
+    cout << "Notification Frequency: Daily" << endl;
+    cout << "Profile Visibility: Private" << endl;
+
+}
 
 int main() {
     printWelcomeMessage();
@@ -82,6 +92,7 @@ int main() {
     displayDashboard(student);
 
     displayMenu();
+    displaySettings();
 
     bool loggedIn = loginUser("student", "portal123");
 
