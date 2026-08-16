@@ -7,6 +7,7 @@ struct Student {
     string name;
     int rollNumber;
     string department;
+    string email;
 };
 
 void displayStudent(const Student& student) {
@@ -37,13 +38,14 @@ void displayProfile(const Student& student) {
     cout << "Name: " << student.name << endl;
     cout << "Roll Number: " << student.rollNumber << endl;
     cout << "Department: " << student.department << endl;
+    cout << "Email: " << student.email << endl;
 }
 
 int main() {
     printWelcomeMessage();
     greetUser();
 
-    Student student{"Nikhilesh Patil", 101, "Computer Science"};
+    Student student{"Nikhilesh Patil", 101, "Computer Science","nikhilesh.patil@gmail.com"};
     displayStudent(student);
     displayProfile(student);
     displayMenu();
