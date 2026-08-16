@@ -57,7 +57,9 @@ int main() {
     bool loggedIn = loginUser("student", "portal123");
 
     if (loggedIn) {
-        cout << "Login successful." << endl;
+        cout << "Login successful. Welcome back!" << endl;
+    } else {
+        cout << "Login failed. Invalid credentials." << endl;
     }
     
     cout << "Program finished successfully." << std::endl;
