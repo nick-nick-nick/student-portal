@@ -32,6 +32,9 @@ void displayMenu() {
     cout << "4. Logout" << endl;
 }
 
+bool loginUser(const string& username, const string& password) {
+    return username == "student" && password == "portal123";
+}
 
 int main() {
     printWelcomeMessage();
@@ -41,6 +44,12 @@ int main() {
     displayStudent(student);
     displayMenu();
 
+    bool loggedIn = loginUser("student", "portal123");
+
+    if (loggedIn) {
+        cout << "Login successful." << endl;
+    }
+    
     cout << "Program finished successfully." << std::endl;
 
     return 0;
