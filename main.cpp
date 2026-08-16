@@ -87,6 +87,7 @@ void displayNotifications() {
     cout << "1. Assignment deadline approaching." << endl;
     cout << "2. New message from administration." << endl;
     cout << "Unread notifications: 2" << endl;
+    cout << "3. Course registration window is open." << endl;
 }
 
 int main() {
@@ -95,6 +96,8 @@ int main() {
 
     Student student{"Nikhilesh Patil", 101, "Computer Science","nikhilesh.patil@gmail.com",true,2026};
     displayStudent(student);
+
+    displayNotifications();
 
     displayProfile(student);
 
