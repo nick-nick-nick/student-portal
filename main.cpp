@@ -36,6 +36,7 @@ void displaySettings() {
     cout << "\n===== Portal Settings =====" << endl;
     cout << "Theme: Default" << endl;
     cout << "Notifications: Enabled" << endl;
+    cout << "Language: English" << endl;
 }
 
 int main() {
