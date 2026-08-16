@@ -88,6 +88,7 @@ void displayNotifications() {
     cout << "2. New message from administration." << endl;
     cout << "Unread notifications: 2" << endl;
     cout << "3. Course registration window is open." << endl;
+    cout << "Priority: High" << endl;
 }
 
 int main() {
