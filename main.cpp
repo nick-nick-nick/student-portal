@@ -83,6 +83,7 @@ void displaySettings() {
 
 void displayNotifications() {
     cout << "\n===== Notifications =====" << endl;
+    cout << "Status: Notifications available" << endl;
     cout << "Total notifications: 3" << endl;
     cout << "1. Assignment deadline approaching." << endl;
     cout << "2. New message from administration." << endl;
