@@ -32,6 +32,12 @@ void displayMenu() {
     cout << "4. Logout" << endl;
 }
 
+void displayProfile(const Student& student) {
+    cout << "\n===== Student Profile =====" << endl;
+    cout << "Name: " << student.name << endl;
+    cout << "Roll Number: " << student.rollNumber << endl;
+    cout << "Department: " << student.department << endl;
+}
 
 int main() {
     printWelcomeMessage();
@@ -39,6 +45,7 @@ int main() {
 
     Student student{"Nikhilesh Patil", 101, "Computer Science"};
     displayStudent(student);
+    displayProfile(student);
     displayMenu();
 
     cout << "Program finished successfully." << std::endl;
