@@ -32,8 +32,12 @@ void displayMenu() {
     cout << "4. Logout" << endl;
 }
 
+bool validateUsername(const string& username) {
+    return username == "student";
+}
+
 bool loginUser(const string& username, const string& password) {
-    return username == "student" && password == "portal123";
+    return validateUsername(username) && password == "portal123";
 }
 
 int main() {
