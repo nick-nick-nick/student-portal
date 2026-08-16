@@ -1,6 +1,20 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
+struct Student {
+    string name;
+    int rollNumber;
+    string department;
+};
+
+void displayStudent(const Student& student) {
+    cout << "\nStudent Information" << endl;
+    cout << "Name: " << student.name << endl;
+    cout << "Roll Number: " << student.rollNumber << endl;
+    cout << "Department: " << student.department << endl;
+}
 void printWelcomeMessage() {
     std::cout << "      Welcome to Git !       " << std::endl;
 }
@@ -10,20 +24,16 @@ void greetUser() {
     std::cout << "Hello, Developer!" << std::endl;
 }
 
-int addNumbers(int a, int b) {
-    return a + b;
-}
+
 
 int main() {
     printWelcomeMessage();
     greetUser();
 
-    int num1 = 5;
-    int num2 = 10;
-    int result = addNumbers(num1, num2);
+    Student student{"Nikhilesh Patil", 101, "Computer Science"};
+    displayStudent(student);
 
-    std::cout << "The sum of " << num1 << " and " << num2 << " is: " << result << std::endl;
-    std::cout << "Program finished successfully." << std::endl;
+    cout << "Program finished successfully." << std::endl;
 
     return 0;
 }
