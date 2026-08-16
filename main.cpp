@@ -39,6 +39,7 @@ void displayDashboard(const Student& student) {
     cout << "Roll Number: " << student.rollNumber << endl;
     cout << "Enrolled Courses: 5" << endl;
     cout << "Attendance: 92%" << endl;
+    cout << "Pending Tasks: 2" << endl;
 }
 
 int main() {
