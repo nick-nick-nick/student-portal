@@ -8,6 +8,7 @@ struct Student {
     int rollNumber;
     string department;
     string email;
+    bool active;
 };
 
 void displayStudent(const Student& student) {
@@ -39,13 +40,14 @@ void displayProfile(const Student& student) {
     cout << "Roll Number: " << student.rollNumber << endl;
     cout << "Department: " << student.department << endl;
     cout << "Email: " << student.email << endl;
+    cout << "Status: " << (student.active ? "Active" : "Inactive") << endl;
 }
 
 int main() {
     printWelcomeMessage();
     greetUser();
 
-    Student student{"Nikhilesh Patil", 101, "Computer Science","nikhilesh.patil@gmail.com"};
+    Student student{"Nikhilesh Patil", 101, "Computer Science","nikhilesh.patil@gmail.com",true};
     displayStudent(student);
     displayProfile(student);
     displayMenu();
