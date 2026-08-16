@@ -38,6 +38,7 @@ void displaySettings() {
     cout << "Notifications: Enabled" << endl;
     cout << "Language: English" << endl;
     cout << "Notification Frequency: Daily" << endl;
+    cout << "Profile Visibility: Private" << endl;
 }
 
 int main() {
