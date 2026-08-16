@@ -7,6 +7,9 @@ struct Student {
     string name;
     int rollNumber;
     string department;
+    string email;
+    bool active;
+    int enrollmentYear;
 };
 
 void displayStudent(const Student& student) {
@@ -46,12 +49,24 @@ bool loginUser(const string& username, const string& password) {
            password == "portal123";
 }
 
+void displayProfile(const Student& student) {
+    cout << "\n===== Student Profile =====" << endl;
+    cout << "Name: " << student.name << endl;
+    cout << "Roll Number: " << student.rollNumber << endl;
+    cout << "Department: " << student.department << endl;
+    cout << "Email: " << student.email << endl;
+    cout << "Status: " << (student.active ? "Active" : "Inactive") << endl;
+    cout << "Enrollment Year: " << student.enrollmentYear << endl;
+
+}
+
 int main() {
     printWelcomeMessage();
     greetUser();
 
-    Student student{"Nikhilesh Patil", 101, "Computer Science"};
+    Student student{"Nikhilesh Patil", 101, "Computer Science","nikhilesh.patil@gmail.com",true,2026};
     displayStudent(student);
+    displayProfile(student);
     displayMenu();
 
     bool loggedIn = loginUser("student", "portal123");
