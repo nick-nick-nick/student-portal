@@ -80,6 +80,15 @@ void displaySettings() {
 
 }
 
+
+void displayNotifications() {
+    cout << "\n===== Notifications =====" << endl;
+    cout << "You have 3 new notifications." << endl;
+    cout << "1. Assignment deadline approaching." << endl;
+    cout << "2. New message from administration." << endl;
+    cout << "Unread notifications: 2" << endl;
+}
+
 int main() {
     printWelcomeMessage();
     greetUser();
