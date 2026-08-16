@@ -83,11 +83,14 @@ void displaySettings() {
 
 void displayNotifications() {
     cout << "\n===== Notifications =====" << endl;
-    cout << "You have 3 new notifications." << endl;
+    cout << "Status: Notifications available" << endl;
+    cout << "Total notifications: 3" << endl;
     cout << "1. Assignment deadline approaching." << endl;
     cout << "2. New message from administration." << endl;
-    cout << "Unread notifications: 2" << endl;
+    cout << "Unread notifications: 5" << endl;
     cout << "3. Course registration window is open." << endl;
+    cout << "Priority: High" << endl;
+    cout << "Notification center status: Active" << endl;
 }
 
 int main() {
