@@ -24,6 +24,13 @@ void greetUser() {
     cout << "Hello, Student!" << endl;
 }
 
+void displayMenu() {
+    cout << "\n===== Student Portal Menu =====" << endl;
+    cout << "1. View Profile" << endl;
+    cout << "2. View Courses" << endl;
+    cout << "3. View Settings" << endl;
+    cout << "4. Logout" << endl;
+}
 
 
 int main() {
@@ -32,6 +39,7 @@ int main() {
 
     Student student{"Nikhilesh Patil", 101, "Computer Science"};
     displayStudent(student);
+    displayMenu();
 
     cout << "Program finished successfully." << std::endl;
 
