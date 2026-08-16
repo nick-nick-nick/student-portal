@@ -16,12 +16,12 @@ void displayStudent(const Student& student) {
     cout << "Department: " << student.department << endl;
 }
 void printWelcomeMessage() {
-    std::cout << "      Welcome to Git !       " << std::endl;
+    cout << "Welcome to Student Portal!" << endl;
 }
 
 
 void greetUser() {
-    std::cout << "Hello, Developer!" << std::endl;
+    cout << "Hello, Student!" << endl;
 }
 
 
