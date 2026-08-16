@@ -37,6 +37,7 @@ void displayDashboard(const Student& student) {
     cout << "Welcome, " << student.name << "!" << endl;
     cout << "Department: " << student.department << endl;
     cout << "Roll Number: " << student.rollNumber << endl;
+    cout << "Enrolled Courses: 5" << endl;
 }
 
 int main() {
