@@ -36,8 +36,14 @@ bool validateUsername(const string& username) {
     return username == "student";
 }
 
+bool validatePassword(const string& password) {
+    return password.length() >= 8;
+}
+
 bool loginUser(const string& username, const string& password) {
-    return validateUsername(username) && password == "portal123";
+    return validateUsername(username) &&
+           validatePassword(password) &&
+           password == "portal123";
 }
 
 int main() {
