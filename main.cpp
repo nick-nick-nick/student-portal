@@ -32,6 +32,19 @@ void displayMenu() {
     cout << "4. Logout" << endl;
 }
 
+bool validateUsername(const string& username) {
+    return username == "student";
+}
+
+bool validatePassword(const string& password) {
+    return password.length() >= 8;
+}
+
+bool loginUser(const string& username, const string& password) {
+    return validateUsername(username) &&
+           validatePassword(password) &&
+           password == "portal123";
+}
 
 int main() {
     printWelcomeMessage();
@@ -41,6 +54,14 @@ int main() {
     displayStudent(student);
     displayMenu();
 
+    bool loggedIn = loginUser("student", "portal123");
+
+    if (loggedIn) {
+        cout << "Login successful. Welcome back!" << endl;
+    } else {
+        cout << "Login failed. Invalid credentials." << endl;
+    }
+    
     cout << "Program finished successfully." << std::endl;
 
     return 0;
