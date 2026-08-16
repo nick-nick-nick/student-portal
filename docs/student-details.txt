@@ -1,9 +1,0 @@
-Student Portal Information
-==========================
-
-The Student Portal provides basic student information and navigation features.
-
-Current modules:
-- Student Profile
-- Course Information
-- Portal Settings
