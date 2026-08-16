@@ -59,6 +59,16 @@ void displayProfile(const Student& student) {
     cout << "Enrollment Year: " << student.enrollmentYear << endl;
 
 }
+void displayDashboard(const Student& student) {
+    cout << "\n===== Student Dashboard =====" << endl;
+    cout << "Welcome, " << student.name << "!" << endl;
+    cout << "Department: " << student.department << endl;
+    cout << "Roll Number: " << student.rollNumber << endl;
+    cout << "Enrolled Courses: 5" << endl;
+    cout << "Attendance: 92%" << endl;
+    cout << "Pending Tasks: 2" << endl;
+
+}
 
 int main() {
     printWelcomeMessage();
@@ -66,7 +76,11 @@ int main() {
 
     Student student{"Nikhilesh Patil", 101, "Computer Science","nikhilesh.patil@gmail.com",true,2026};
     displayStudent(student);
+
     displayProfile(student);
+
+    displayDashboard(student);
+
     displayMenu();
 
     bool loggedIn = loginUser("student", "portal123");
