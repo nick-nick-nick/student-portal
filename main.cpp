@@ -90,6 +90,7 @@ void displayNotifications() {
     cout << "3. Course registration window is open." << endl;
     cout << "Priority: High" << endl;
     cout << "Unread notification count: 2" << endl;
+    cout << "Notification center status: Active" << endl;
 }
 
 int main() {
