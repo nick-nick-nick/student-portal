@@ -37,6 +37,7 @@ void displaySettings() {
     cout << "Theme: Default" << endl;
     cout << "Notifications: Enabled" << endl;
     cout << "Language: English" << endl;
+    cout << "Notification Frequency: Daily" << endl;
 }
 
 int main() {
