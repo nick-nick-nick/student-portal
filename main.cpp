@@ -87,7 +87,7 @@ void displayNotifications() {
     cout << "Total notifications: 3" << endl;
     cout << "1. Assignment deadline approaching." << endl;
     cout << "2. New message from administration." << endl;
-    cout << "Unread notifications: 2" << endl;
+    cout << "Unread notifications: 4" << endl;
     cout << "3. Course registration window is open." << endl;
     cout << "Priority: High" << endl;
     cout << "Unread notification count: 2" << endl;
